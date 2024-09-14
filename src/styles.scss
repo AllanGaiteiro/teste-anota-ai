@@ -2,7 +2,7 @@
 
 html,
 body {
-    background: #C4C4C4;
+    background: #EFEFEF;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,4 +10,8 @@ body {
 
 .flex {
     display: flex;
+}
+
+h2,p {
+    margin: 0px;
 }
