@@ -1,0 +1,3 @@
+<div class="card-list" *ngIf="filteredItems && filteredItems.length > 0">
+    <app-card-item  *ngFor="let item of filteredItems" [item]="item"></app-card-item>
+</div>
