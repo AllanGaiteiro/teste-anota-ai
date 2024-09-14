@@ -1,0 +1,12 @@
+button {
+  width: 42px;
+  height: 44px;
+  border-radius:  0px 4px 4px 0px ;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4
+}
+
+.button:focus {
+  outline: none;
+  border: 1px solid #C4C4C4
+}
