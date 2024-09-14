@@ -49,4 +49,9 @@ export class CardListComponent implements OnInit, OnChanges, OnDestroy {
       );
     }
   }
+
+  handleDelete(item: ItemEntity): void {
+    this.itens = this.itens.filter(i => i !== item);
+    this.filterItems();
+  }
 }
