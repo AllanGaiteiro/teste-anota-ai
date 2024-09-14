@@ -1,12 +1,12 @@
 button {
   width: 42px;
-  height: 44px;
+  height: 42px;
   border-radius:  0px 4px 4px 0px ;
   background: #FFFFFF;
-  border: 1px solid #C4C4C4
+  border: 2px solid #C4C4C4
 }
 
-.button:focus {
+button:focus {
   outline: none;
-  border: 1px solid #C4C4C4
+  border: 3px solid #26a8ff;
 }
