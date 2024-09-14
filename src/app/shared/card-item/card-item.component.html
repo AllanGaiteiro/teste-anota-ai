@@ -1,0 +1,9 @@
+<div class="card-item" *ngIf="item">
+    <div class="card-item-header" [ngStyle]="{'background-image': 'url(' + item.img + ')'}">
+        <app-card-item-type [type]="item.type"></app-card-item-type>
+    </div>
+    <div>
+        <app-card-item-title [title]="item.title"></app-card-item-title>
+        <app-card-item-description [description]="item.description"></app-card-item-description>
+    </div>
+</div>
