@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Item } from '../card-list/Item';
+import { ItemEntity } from '../../core/entities/item.entity';
 import { CardItemTitleComponent } from '../card-item-title/card-item-title.component';
 import { CardItemDescriptionComponent } from '../card-item-description/card-item-description.component';
 import { CardItemTypeComponent } from '../card-item-type/card-item-type.component';
@@ -16,6 +16,5 @@ import { CardItemTypeComponent } from '../card-item-type/card-item-type.componen
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CardItemComponent {
-  @Input() item?: Item;
-
+  @Input() item?: ItemEntity;
 }
