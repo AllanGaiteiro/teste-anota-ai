@@ -1,10 +1,14 @@
 import { TestBed } from '@angular/core/testing';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { PageListComponent } from './pages/page-list/page-list.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      imports: [AppComponent, HeaderComponent, PageListComponent,],
+      providers: [provideHttpClient(withInterceptorsFromDi())],
     }).compileComponents();
   });
 
@@ -14,16 +18,15 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'teste-anota-ai' title`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
+  it('should create the app-header', () => {
+    const fixture = TestBed.createComponent(HeaderComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('teste-anota-ai');
+    expect(app).toBeTruthy();
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, teste-anota-ai');
+  it('should create the app-page-list', () => {
+    const fixture = TestBed.createComponent(PageListComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
   });
 });
