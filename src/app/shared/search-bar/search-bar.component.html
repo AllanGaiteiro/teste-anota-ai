@@ -1,6 +1,6 @@
 <div>
     <form class="search-bar" (submit)="onSubmit()">
-        <input class="search-input" type="text" [(ngModel)]="searchText" name="searchTerm" (ngModelChange)="onSubmit()"
+        <input class="search-input" type="text" [(ngModel)]="searchText" name="searchTerm" aria-label="digite aqui para filtrar" (ngModelChange)="onSubmit()"
             required />
         <button type="submit">
             <img src="assets/lupa.png" alt="Icone de busca" />

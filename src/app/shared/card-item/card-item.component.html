@@ -1,5 +1,5 @@
 <div class="card-item" *ngIf="item">
-    <div class="card-item-header" [ngStyle]="{'background-image': 'url(' + item.img + ')'}">
+    <div class="card-item-header">
         <app-card-item-delete (click)="onDelete()" ></app-card-item-delete>
         <app-card-item-type [type]="item.type"></app-card-item-type>
     </div>

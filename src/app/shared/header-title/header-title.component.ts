@@ -7,7 +7,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   imports: [
     CommonModule,
   ],
-  template: `<p>Teste de Desenvolvedor Front-End - Anota AI</p>`,
+  template: `<h1>Teste de Desenvolvedor Front-End - Anota AI</h1>`,
   styleUrl: './header-title.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

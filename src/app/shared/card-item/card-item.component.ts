@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Output, AfterViewInit } from '@angular/core';
 import { ItemEntity } from '../../core/entities/item.entity';
 import { CardItemTitleComponent } from '../card-item-title/card-item-title.component';
 import { CardItemDescriptionComponent } from '../card-item-description/card-item-description.component';
@@ -10,15 +10,41 @@ import { CardItemDeleteComponent } from '../card-item-delete/card-item-delete.co
   selector: 'app-card-item',
   standalone: true,
   imports: [
-    CommonModule,CardItemTitleComponent,CardItemDescriptionComponent,CardItemTypeComponent,CardItemDeleteComponent
+    CommonModule, CardItemTitleComponent, CardItemDescriptionComponent, CardItemTypeComponent, CardItemDeleteComponent
   ],
   templateUrl: './card-item.component.html',
-  styleUrl: './card-item.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrls: ['./card-item.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Default,
 })
-export class CardItemComponent {
+export class CardItemComponent implements AfterViewInit {
   @Input() item?: ItemEntity;
   @Output() delete = new EventEmitter<ItemEntity>();
+  lazyImage: string = ''; 
+  constructor(private el: ElementRef) { }
+
+  ngAfterViewInit() {
+    this.observeElement();
+  }
+
+  observeElement() {
+    const target = this.el.nativeElement.querySelector('.card-item-header');
+    if (target) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            this.lazyImage = this.item?.img || '';
+            if (this.lazyImage) target.style.backgroundImage = `url(${this.lazyImage})`;
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      observer.observe(target);
+    } else {
+      console.error('Element not found');
+    }
+  }
+
 
   onDelete(): void {
     this.delete.emit(this.item);
