@@ -27,5 +27,5 @@ jobs:
         with:
           branch: gh-pages
           folder: dist/teste-anota-ai
-      - name: Cleanup
-        run: npm cache clean --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Usa o token secreto para autenticação
