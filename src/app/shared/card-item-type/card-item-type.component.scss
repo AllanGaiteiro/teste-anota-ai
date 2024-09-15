@@ -6,19 +6,21 @@
   bottom: 10px;
   right: 10px;
   padding: 5px;
-  background: #0658F9;
+  background: var(--color-type-1);
   font-family: Inter;
   font-size: 12px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 
 .card-item-type-1 {
-  background: #0658F9;
+  background: var(--color-type-1);
 }
+
 .card-item-type-2 {
-  background: #fe0148;
+  background: var(--color-type-2);
 }
+
 .card-item-type-3 {
-  background: #948a03;
+  background: var(--color-type-3);
 }
