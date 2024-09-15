@@ -29,7 +29,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.6.4
         with:
           branch: gh-pages
-          folder: dist
+          folder: dist/teste-anota-ai/browser
           destination-dir: /
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
