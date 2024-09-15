@@ -27,5 +27,3 @@ jobs:
         with:
           branch: gh-pages
           folder: dist/teste-anota-ai
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Usa o token secreto para autenticação
