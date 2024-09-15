@@ -1,6 +1,7 @@
 # TesteAnotaAi
 ![GitHub repo size](https://img.shields.io/github/repo-size/AllanGaiteiro/teste-anota-ai?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/AllanGaiteiro/teste-anota-ai?style=for-the-badge)
+[![Link para o Prototipo](https://img.shields.io/badge/Prototipo-ffffff?style=for-the-badge&color=F24E1E)](https://www.figma.com/proto/7nmDG48ShHlJqGDfVlbylJ/Untitled?node-id=1-5&node-type=frame&t=7WWbPVLiDdtPcCgz-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
 [![Acessar_Site](https://img.shields.io/badge/-Acessar_Site-49BE?style=for-the-badge)](https://allangaiteiro.github.io/teste-anota-ai/)
 
 This project was created for a test for Anota AI, with the goal of completing all the tasks listed below.
