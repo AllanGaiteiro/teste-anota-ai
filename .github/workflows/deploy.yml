@@ -28,4 +28,4 @@ jobs:
           branch: gh-pages
           folder: dist/teste-anota-ai
         env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }} 
