@@ -71,6 +71,12 @@ http://localhost:4200/
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+Access the test in your browser at:
+
+```
+http://localhost:9876/debug.html
+```
+
 ## Deploy
 
 The project is hosted on Firebase and can be accessed via the following link:
