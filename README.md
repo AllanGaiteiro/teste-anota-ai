@@ -101,8 +101,6 @@ link: https://allangaiteiro.github.io/teste-anota-ai/
 
 ## Connect with Me
 
-<p align="center">
-<a href="https://www.linkedin.com/in/allan-gaiteiro"><img src="https://img.shields.io/badge/-Linkedin-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white"/></a> 
-<a href="mailto:allansgaiteiro@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white"/></a> 
-<a href="https://github.com/AllanGaiteiro"><img src="https://img.shields.io/badge/-GitHub-24292e?style=for-the-badge&logo=github"/></a>
-</p>
+[![Repositório no GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AllanGaiteiro) 
+[![Acessar o Linkedin](https://img.shields.io/badge/-Linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/allan-gaiteiro) 
+[![Acessar o Gmai](https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://www.linkedin.com/in/allan-gaiteiro) 
