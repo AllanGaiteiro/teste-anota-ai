@@ -14,18 +14,18 @@ preferably Angular 17.
 3. Create a list of cards. For, this you’ll need to send a HTTP GET request to the URI
 below to receive the JSON list:
 https://githubanotaai.github.io/frontend-interview-mock-data/cardlist.json
-3.1. Use the following reference for the type names:
-Type 1: Paisagem
-Type 2: Flor
-Type 3: Pizza
-4. Insert an option to delete card (the card must be removed from the list on the
+3. Use the following reference for the type names:
+- Type 1: Paisagem
+- Type 2: Flor
+- Type 3: Pizza
+5. Insert an option to delete card (the card must be removed from the list on the
 front-end)
-5. Insert a “search field” and implement a product filtering feature where the user can
+6. Insert a “search field” and implement a product filtering feature where the user can
 filter the cards by title or description.
 
 ### Bonus Tasks
 1. If you're comfortable writing unit tests, we would greatly appreciate it.
-1. 1. While we do prefer Jest, if you prefer to use Karma/Jasmine, that's perfectly fine
+- While we do prefer Jest, if you prefer to use Karma/Jasmine, that's perfectly fine
 too.
 
 
@@ -46,8 +46,15 @@ too.
 
 1. Download the repository to your machine:
 
+
+- Branch: [master](https://github.com/AllanGaiteiro/teste-anota-ai/tree/master) with Angular 19 - Node 20
 ```
 git clone https://github.com/AllanGaiteiro/teste-anota-ai.git
+```
+
+- Branch: [angular-17](https://github.com/AllanGaiteiro/teste-anota-ai/tree/angular-17) with Angular 17 - Node 18
+```
+git clone -b angular-17 https://github.com/AllanGaiteiro/teste-anota-ai.git
 ```
 
 2. Then, navigate to the project directory and install the dependencies using the command:
@@ -59,7 +66,7 @@ npm install
 3. Start the application locally:
 
 ```
-ng serve
+npm start
 ```
 
 4. Access the application in your browser at:
@@ -70,7 +77,7 @@ http://localhost:4200/
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 Access the test in your browser at:
 
