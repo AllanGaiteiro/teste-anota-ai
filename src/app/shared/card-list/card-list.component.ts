@@ -14,7 +14,7 @@ import { Subscription } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class CardListComponent implements OnInit, OnChanges, OnDestroy {
-  @Input() searchText: string = '';
+  @Input() searchText = '';
   itens: ItemEntity[] = [];
   filteredItems: ItemEntity[] = [];
   itensSubscription?: Subscription;

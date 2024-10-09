@@ -19,7 +19,7 @@ import { CardItemDeleteComponent } from '../card-item-delete/card-item-delete.co
 export class CardItemComponent implements AfterViewInit {
   @Input() item?: ItemEntity;
   @Output() delete = new EventEmitter<ItemEntity>();
-  lazyImage: string = ''; 
+  lazyImage = ''; 
   constructor(private el: ElementRef) { }
 
   ngAfterViewInit() {

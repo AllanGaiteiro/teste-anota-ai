@@ -14,7 +14,7 @@ import { SearchBarComponent } from '../../shared/search-bar/search-bar.component
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class PageListComponent {
-  searchText: string = '';
+  searchText = '';
 
   onSearch(search: string): void {
     this.searchText = search;

@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SearchBarComponent {
-  searchText: string = '';
+  searchText = '';
 
   @Output() search = new EventEmitter<string>();
 
